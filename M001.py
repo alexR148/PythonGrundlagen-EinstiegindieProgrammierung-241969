@@ -37,10 +37,9 @@ c = 5 + 12j
 print(c)
 
 # Stringfunktionen
-
 text = "Hallo ich bin ein Text"
-text.upper()
-text.lower()
+print(text.upper())
+print(text.lower())
 
 text.isnumeric()
 text.isalpha()
@@ -81,8 +80,13 @@ z2 = 7
 print(z1 + z2)  # Originale Werte werden nicht verändert
 z1 += z2  # Hier wird z1 verändert
 
-print(z1 % z2)
-z1 %= z2
+z1 = z1 + z2
+
+summe = z1 + z2
+z1 = summe
+
+print(z1 % z2)  # Modulo: Rest einer Division
+z1 %= z2  # 4 / 7 = 0, 4R -> 4
 
 print(z1, z2)
 print(z1 ** z2)  # Potenzierung
@@ -95,7 +99,9 @@ z1 **= z2
 # Strings verarbeiten mit Arithmetik
 t1 = "Hallo"
 t2 = "Welt"
-print(t1 + t2)
+halloWelt = t1 + t2  # Mit separater Variable
+print(halloWelt)
+print(t1 + t2)  # Direkt in print
 
 print(t1 * 10)
 print(type(t1[0]))  # Einzelne Character sind auch Strings
