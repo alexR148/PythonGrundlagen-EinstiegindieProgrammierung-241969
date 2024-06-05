@@ -99,3 +99,5 @@ print(t1 + t2)
 
 print(t1 * 10)
 print(type(t1[0]))  # Einzelne Character sind auch Strings
+
+print(len(text))  # len: Länge von einem Objekt ausgeben
