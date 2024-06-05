@@ -36,6 +36,8 @@ print(b)
 c = 5 + 12j
 print(c)
 
+#######################################################################################
+
 # Stringfunktionen
 text = "Hallo ich bin ein Text"
 print(text.upper())
@@ -54,6 +56,8 @@ text.strip(" ")
 text.lstrip(" ")
 text.rstrip(" ")
 
+#######################################################################################
+
 # Index
 print(text)
 
@@ -70,6 +74,8 @@ print(text[:3])  # Vom Anfang bis zu Stelle 3
 print(text[-4:])
 
 print(text[:])  # Alles
+
+#######################################################################################
 
 # Arithmetik
 
