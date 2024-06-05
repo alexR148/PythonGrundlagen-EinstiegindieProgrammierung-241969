@@ -119,3 +119,35 @@ for i in range(10):
 # Zahl + Endung 'st', 'nd', 'rd' oder 'th'
 # 1st, 2nd, 3rd, 4th, ..., 21st, 22nd, 23rd, 24th
 # Bonus: Berücksichtige alle Zahlen die mit 11, 12 oder 13 enden
+
+
+# Übung 3:
+# Stoppuhr
+# Bevor die Minute hochtickt, müssen die Sekunden einmal eine vollkommene Umdrehung hinter sich gebracht haben
+# import time
+# time.sleep(Float) Funktion hier nützlich
+import time
+for sec in range(3600):
+	time.sleep(1)
+	print(f"{(sec // 60):02}:{(sec % 60):02}")
+
+for z1 in range(60):
+	for z2 in range(60):
+		time.sleep(1)
+		print(f"{z1:02}:{z2:02}")
+
+# Übung 4:
+# Erstelle eine Schleife die das kleine Einmaleins von 1 bis 10 berechnet, und jeden einzelnen
+# Schritt in der Konsole ausgibt
+# "1 x 1 = 1"
+# "1 x 2 = 2"
+# ...
+# "5 x 5 = 25"
+# ...
+# "7 x 4 = 28"
+# ...
+# "10 x 10 = 100"
+
+for z1 in range(1, 11):
+	for z2 in range(1, 11):
+		print(f"{z1}x{z2}={z1 * z2}")
