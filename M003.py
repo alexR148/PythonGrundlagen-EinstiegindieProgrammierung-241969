@@ -96,3 +96,46 @@ print("z1 ist größer als z2" if z1 > z2
 	  else "z1 ist gleich z2")
 
 ############################################################################
+
+list1 = [1, 2, 3, 4, 10]
+list2 = [2, 3, 4, 5, 6]
+list3 = [5, 6, 7, 8]
+laengen = [len(list1), len(list2), len(list3)]
+laengen.sort()
+laengste = laengen[-1]
+if len(list1) == laengste:
+	print("list1 ist die längste Liste")
+if len(list2) == laengste:
+	print("list2 ist die längste Liste")
+if len(list3) == laengste:
+	print("list3 ist die längste Liste")
+
+
+oberliste = [list1, list2, list3]
+maxL = -1
+listen = []
+for l in oberliste:
+	x = len(l)
+	if x > maxL:
+		maxL = x
+		listen.clear()
+	elif x == maxL:
+		listen.append(l)
+print(listen)
+
+
+zahl = 12
+if zahl:
+	print()
+
+gesamt = list1 + list2 + list3
+if 3 in gesamt or 7 in gesamt or 10 in gesamt:
+	print("...")
+
+
+gesucht = {3, 7, 10}
+inBeidenListen = gesucht.intersection(gesamt)
+if len(inBeidenListen) > 0:
+	print(inBeidenListen)
+else:
+	print("Keine der gesuchten Zahlen enthalten")
