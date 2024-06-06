@@ -76,7 +76,19 @@ print(os.path.join("Das", "ist", "ein", "Pfad"))
 # User soll eine davon auswählen über input()
 # Wenn der User keine valide Möglichkeit eingibt, soll die Eingabe wiederholt werden
 # Bei w oder a soll ein File geöffnet werden und eine Erfolgsmeldung in das File geschrieben werden
-# Bei r soll das File ausgelesen werden und der Inhalt in die Konsole geschrieben werden
+# Bei r soll geprüft werden ob das File existert, wenn ja, soll das File ausgelesen werden und der Inhalt in die Konsole geschrieben werden
+def file():
+	while True:
+		eingabe = input("Gib w, r oder a ein: ")
+		if eingabe in ["w", "r", "a"]:
+			with open("File.txt", eingabe) as f:
+				if eingabe == "r" and os.path.exists("File.txt"):
+					print(f.readlines())
+				else:
+					f.write("Hallo")
+			break
+		else:
+			print("Ungültige Eingabe")
 
 # Übung 2:
 # Erstelle ein Programm, das zwei Integer oder Floats abfragt
@@ -85,3 +97,32 @@ print(os.path.join("Das", "ist", "ein", "Pfad"))
 # Bei Ungültiger Eingabe soll der Benutzer erneut nach seiner Entscheidung gefragt werden.
 # Lasse das Ergebnis inklusive der Rechnung in der Konsole ausgeben
 # Frage nach Ende der Operation ob der Benutzer eine neue Rechnung (Wiederholen) durchführen will
+def rechner():
+	while True:
+		z1 = input("Gib eine Zahl ein: ")
+		z2 = input("Gib eine weitere Zahl ein: ")
+
+		print("1: Addition\n2: Subtraktion\n3: Multiplikation\n4: Division")
+		operation = input("Gib eine Rechenoperation ein: ")
+		if not z1.isnumeric() or not z2.isnumeric() or operation not in [f"{i}" for i in range(1, 5)]:
+			print("Zahl1, Zahl2 oder die Rechenoperation sind ungültig")
+			continue
+
+		z1 = int(z1)
+		z2 = int(z2)
+		operation = int(operation)
+
+		if operation == 1:
+			print(f"{z1} + {z2} = {z1 + z2}")
+		elif operation == 2:
+			print(f"{z1} - {z2} = {z1 - z2}")
+		elif operation == 3:
+			print(f"{z1} * {z2} = {z1 * z2}")
+		else:
+			print(f"{z1} / {z2} = {z1 / z2}")
+
+		w = input("Neue Berechnung? (Y)")
+		if w.lower() != "y":
+			break
+
+rechner()
