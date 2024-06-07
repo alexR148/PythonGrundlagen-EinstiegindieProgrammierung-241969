@@ -82,3 +82,19 @@ class Hund(Lebewesen):
 print()  # Verlangt einen object Parameter (*values: object)
 # Jeder Funktionsparameter, der keine Typempfehlung hat, hat den Typ object
 # Jede Klasse, die keine Oberklasse hat, hat auch die object Oberklasse
+
+#####################################################
+
+# Übung 1
+# Definiere drei weitere Klassen namens PKW, Schiff und Flugzeug
+# Lasse diese drei Klassen von der Fahrzeug Klasse erben
+# - Importiere die Fahrzeug Klasse aus einem anderen Skript (per Import)
+# Erstelle nun ein Klassenspezifisches Feld und eine Funktion für jede der Unterklassen
+
+# __str__:
+# - Ersetze die beschreibung-Funktion durch die __str__ Funktion und implementiere in dieser einen Rückbezug auf die Fahrzeug Klasse (mit super())
+# - Füge innerhalb der __str__-Überschreibungen das neue klassenspezifische Feld zu der Ausgabe hinzu
+
+# __init__:
+# - Definiere nun __init__ und implementiere auch hier einen Rückbezug auf die Oberklasse
+# - Implementiere zusätzlich das klassenspezifische Feld innerhalb der Parameterliste von __init__
