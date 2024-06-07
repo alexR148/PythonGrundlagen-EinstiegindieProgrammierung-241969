@@ -93,7 +93,7 @@ print()  # Verlangt einen object Parameter (*values: object)
 
 # __str__:
 # - Ersetze die beschreibung-Funktion durch die __str__ Funktion und implementiere in dieser einen Rückbezug auf die Fahrzeug Klasse (mit super())
-# - Füge innerhalb der __str__-Überschreibungen das neue klassenspezifische Feld zu der Ausgabe hinzu
+# - Füge innerhalb der __str__ Methoden der Unterklassen das neue klassenspezifische Feld zu der Ausgabe hinzu
 
 # __init__:
 # - Definiere nun __init__ und implementiere auch hier einen Rückbezug auf die Oberklasse
