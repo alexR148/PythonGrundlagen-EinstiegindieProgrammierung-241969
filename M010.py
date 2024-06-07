@@ -98,3 +98,5 @@ print()  # Verlangt einen object Parameter (*values: object)
 # __init__:
 # - Definiere nun __init__ und implementiere auch hier einen Rückbezug auf die Oberklasse
 # - Implementiere zusätzlich das klassenspezifische Feld innerhalb der Parameterliste von __init__
+
+# Lasse nun von jedem Fahrzeug eine Ausgabe erzeugen, dabei soll jede Ausgabe das neue Feld beinhalten
