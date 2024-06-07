@@ -47,19 +47,22 @@ except TestException:
 # Übung 1
 # Erstelle ein Programm, das den User nach zwei Integern fragt
 # Falls der User zwei Integer eingibt sollen diese addiert und das Ergebnis in der Konsole ausgegeben werden und das Programm kann beendet werden
-# Falls der Benutzer einen falschen Typen eingibt soll das Programm ihn darauf hinweisen, das nur Integer akzeptiert werden und ihn erneut nach den Zahlen fragen
+# Prüfe die Konvertierung der Zahlen mittels try-except
+# Falls die Eingaben nicht numerisch sind, soll das Programm den Benutzer darauf hinweisen, das nur Integer akzeptiert werden und ihn erneut nach den Zahlen fragen
 
 # Übung 2
 # Definiere eine beliebige Liste
 # Erstelle ein Programm, das den User fragt, das wievielte Element in der Konsole ausgegeben werden soll
-# Falls die Zahl außerhalb des Listen-Indexes liegt soll ein Fehler geworfen und der User darauf hingewiesen werden
+# Definiere zwei Except-Blöcke um:
+# - Eventuelle Konvertierungsfehler abzufangen
+# - Falls die Zahl außerhalb des Listen-Indexes liegt soll ein Fehler geworfen und der User darauf hingewiesen werden
 
 # Übung 3
 # Füge der beschleunigen Funktion deiner Fahrzeug-Klasse aus Modul 9 eine eigene Exception hinzu:
-#    - Sie soll geworfen werden, falls die Höchstgeschwindigkeit überschritten wird
+#    - Sie soll geworfen werden, falls die Geschwindigkeit außerhalb des gültigen Bereiches liegt
 
 # Übung 4
-# Erweitere den Rechner aus Übung 7:
+# Erweitere den Rechner aus Übung 8:
 # Erstelle eine Klasse namens Rechner und füge dieser zwei Methoden hinzu: Berechne und InputLesen
 # Die Berechne Methode soll drei Parameter empfangen (Zahl 1, Zahl 2, Rechenart) und die Berechnung ausführen
 # Die InputLesen Methode soll in einer Endlosschleife vom Benutzer Werte einlesen, bis dieser eine Zahl eingegeben hat
