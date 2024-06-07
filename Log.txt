@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\lk3\source\repos\Python_Grundkurs_2024_06_05\M011.py", line 14, in <module>
+    print(10 / zahl)  # Wenn der User eine 0 eingibt, wird hier ein Fehler auftreten
+          ~~~^~~~~~
+ZeroDivisionError: division by zero
